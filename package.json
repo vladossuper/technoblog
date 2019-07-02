@@ -2,9 +2,10 @@
   "name": "technoblog",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss --o css"
   },
   "repository": {
     "type": "git",
@@ -12,25 +13,11 @@
   },
   "author": "Vladislav Bihun",
   "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-cache": "^1.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.2.1",
-    "gulp-uglifyjs": "^0.6.2",
-    "imagemin-pngquant": "^5.1.0"
-  },
-  "dependencies": {
-    "nconf": "^0.10.0"
-  },
   "bugs": {
     "url": "https://github.com/vladossuper/technoblog/issues"
   },
-  "homepage": "https://github.com/vladossuper/technoblog#readme"
+  "homepage": "https://github.com/vladossuper/technoblog#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
 }

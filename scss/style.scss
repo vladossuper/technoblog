@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// body {
+//     width: 1200px;
+// }
+.fake-wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+@import "blocks/header.scss";
+@import "blocks/main.scss";
+@import "blocks/aside.scss";

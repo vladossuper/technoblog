@@ -4,126 +4,172 @@
         <meta charset="utf-8" />
         <title>Technoblog</title>
         <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
             <h1 class="header-logo"><a href="#">Technoblog</a></h1>
 
-            <ul class="serch">
-                <li class="serch-item">
+            <!-- <ul class="search">
+                <li class="search-item">
                     <input type="search" placeholder="Search"/>
                 </li>
-            </ul>
-
-            <ul class="social-network">
-                    <li class="social-item facebook"><a href="https://facebook.com">Facebook</a></li>
-                    <li class="social-item instagram"><a href="https://instagram.com">Instagram</a></li>
-                    <li class="social-item twitter"><a href="https://twitter.com">Twitter</a></li>
-            </ul>
-
-            <nav class="header-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="#">About</a></li>
-                    <li class="nav-item"><a href="#">Contact Us</a></li>
+            </ul> -->
+            <section class="right-side">
+                <ul class="social-network">
+                        <li class="search-item"><a href="#"><img src="img/iconmonstr-magnifier-1.svg" alt="Search"></a></li>
+                        <li class="social-item facebook"><a href="https://facebook.com"><img src="img/iconmonstr-facebook-4.svg" alt="Facebook"></a></li>
+                        <li class="social-item instagram"><a href="https://instagram.com"><img src="img/iconmonstr-instagram-11.svg" alt="Instagram"></a></li>
+                        <li class="social-item twitter"><a href="https://twitter.com"><img src="img/iconmonstr-twitter-5.svg" alt="Twitter"></a></li>
                 </ul>
-            </nav>
+
+                <nav class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="#">About</a></li>
+                        <li class="nav-item"><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </section>
         </header>
 
+        <div class="fake-wrapper">
         <main>
             <section class="card-wrapper">
                 <ul class="card-list">
                     <li class="card-item">
-                        <img class="card-img" src="https://techcrunch.com/wp-content/uploads/2019/07/Galaxy-UNPACKED-2019-Official-Invitation.jpg?w=1390&crop=1"/>
+                        <div class="image"><a href="#"><img class="card-img" src="https://cdn.vox-cdn.com/thumbor/257AFT58Wds-kFb87kgm43M6MPw=/0x212:2040x1360/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/64659290/akrales_190617_3490_0051.0.jpg"/></a></div>
 
-                        <h3 class="card-title">Samsung will announce the next Galaxy Note on August 7</h3>
+                        <h3 class="card-title">A $50 TABLET CAN HANDLE THE BASICS, BUT NOT MUCH MORE</h3>
 
                         <span class="card-publication">02/07/2019 10:50</span>
 
-                        <p class="card-description">It’s official. Samsung just sent out invites for the next Unpacked event. The big show kicks off at 4PM ET August 7, right here in New York. The timing lines up with rumors that have been floating around for few weeks — not to mention last year’s big event.
+                        <p class="card-description">The best thing about buying a cheap tablet is that it won’t cost a lot: $50 can get you a Wi-Fi-enabled tablet that can access the internet, video chat, and run popular apps, including social media and streaming services. That’s a fantastically low barrier to entry, and those capabilities match the scope of what a large percentage of people demand from a device, be it a tablet or a phone.
 
-                                And in case there was any mystery around what precisely the company is going to unveil, Samsung has happily spoiled the surprise with the inclusion of a prominent S Pen on the invite. The August event will almost certainly see the debut of the Galaxy Note 10.
+                                But, let’s get one thing straight from the start: you’re getting exactly what you pay for.
+                                
+                                I checked out two new tablets to see just how far your money can take you at this point. One is Amazon’s latest $49 Fire 7 tablet, and the other is a $64 Walmart-exclusive device called the Onn tablet. They’re very different tablets, though they have a few things in common: they’re both sluggish, plastic-clad Android tablets with poor battery life, and their screens will turn counting pixels into a side hobby. Flaws aside, they might fit your needs perfectly.
                         </p>
-
-                        <div class="star-rating">
-                                <div class="star-rating__wrap">
-                                  <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
-                                  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
-                                  <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
-                                  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
-                                  <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
-                                  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
-                                  <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
-                                  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
-                                  <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
-                                  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+                        <div class="card-icons">
+                                <div class="review_stars_wrap">
+                                        <div class="review_stars">
+                                            <input id="star-4" type="radio" name="stars"/>
+                                            <label title="Awesome" for="star-4">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-3" type="radio" name="stars"/>
+                                            <label title="Good" for="star-3">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-2" type="radio" name="stars" checked="checked" />
+                                            <label title="Normal" for="star-2">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-1" type="radio" name="stars"/>
+                                            <label title="Bad" for="star-1">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-0" type="radio" name="stars"/>
+                                            <label title="Very bad" for="star-0">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                
+                                    <span class="card-comments">5 </span>
                                 </div>
-                        </div>
-                        
-                        <span>5 comments</span>
                     </li>
 
                     <li class="card-item">
-                        <img class="card-img" src="https://techcrunch.com/wp-content/uploads/2019/07/Galaxy-UNPACKED-2019-Official-Invitation.jpg?w=1390&crop=1"/>
+                        <div class="image"><img class="card-img" src="https://cdn.vox-cdn.com/thumbor/V5DwuZBhgdwf2PC3EQeFPgX_M7U=/0x106:2040x1254/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/64658935/akrales_190228_3255_0525.0.jpg"/></div>
     
-                        <h3 class="card-title">Samsung will announce the next Galaxy Note on August 7</h3>
+                        <h3 class="card-title">Samsung’s Galaxy S10 Plus gets dedicated night photography mode in the US.</h3>
     
                         <span class="card-publication">02/07/2019 10:50</span>
     
-                        <p class="card-description">It’s official. Samsung just sent out invites for the next Unpacked event. The big show kicks off at 4PM ET August 7, right here in New York. The timing lines up with rumors that have been floating around for few weeks — not to mention last year’s big event.
-    
-                                    And in case there was any mystery around what precisely the company is going to unveil, Samsung has happily spoiled the surprise with the inclusion of a prominent S Pen on the invite. The August event will almost certainly see the debut of the Galaxy Note 10.
+                        <p class="card-description">The camera app on the Samsung Galaxy S10 Plus is finally getting a dedicated night mode in the US, reports XDA-Developers. At the moment, the feature has only been confirmed for AT&T Galaxy S10 Plus handsets, but SamMobile reports that Verizon appears to be using the same version number for its June security update, so the feature could also be available there as well. The dedicated night mode was previously only available in international markets.
+
+                                Although the Galaxy S10 launched with a “Bright Night” photography feature, there was no way of manually enabling this mode. Instead, you were at the mercy of Samsung’s camera algorithms, which would enable it automatically under certain circumstances. 
+                                
+                                XDA reports that the feature is available for the Galaxy S10 Plus but says that the S10 and S10E should receive the update soon. There’s currently no word on when the mode will come to devices on other carriers like T-Mobile. 
                         </p>
     
-                        <div class="star-rating">
-                                <div class="star-rating__wrap">
-                                    <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
-                                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
-                                    <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
-                                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
-                                    <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
-                                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
-                                    <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
-                                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
-                                    <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
-                                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+                        <div class="card-icons">
+                                <div class="review_stars_wrap">
+                                        <div class="review_stars">
+                                            <input id="star-9" type="radio" name="stars"/>
+                                            <label title="Awesome" for="star-9">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-8" type="radio" name="stars"/>
+                                            <label title="Good" for="star-8">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-7" type="radio" name="stars" checked="checked" />
+                                            <label title="Normal" for="star-7">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-6" type="radio" name="stars"/>
+                                            <label title="Bad" for="star-7">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-5" type="radio" name="stars"/>
+                                            <label title="Very bad" for="star-5">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                
+                                    <span class="card-comments">5 </span>
                                 </div>
-                        </div>
-                            
-                        <span>5 comments</span>
                 </li>
 
                 <li class="card-item">
-                    <img class="card-img" src="https://techcrunch.com/wp-content/uploads/2019/07/Galaxy-UNPACKED-2019-Official-Invitation.jpg?w=1390&crop=1"/>
+                    <div class="image"><a href="#"><img class="card-img"  src="https://cdn.vox-cdn.com/thumbor/tt7OsjR7-3B30xXvSHK6wcs71o0=/0x106:2040x1254/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/64659074/nstatt_190612_3506_0126.0.jpg"/></a></div>
         
-                    <h3 class="card-title">Samsung will announce the next Galaxy Note on August 7</h3>
+                    <h3 class="card-title">Nvidia reveals new line of ‘Super’ GeForce RTX graphics cards</h3>
         
                     <span class="card-publication">02/07/2019 10:50</span>
         
                     <p class="card-description">It’s official. Samsung just sent out invites for the next Unpacked event. The big show kicks off at 4PM ET August 7, right here in New York. The timing lines up with rumors that have been floating around for few weeks — not to mention last year’s big event.
         
-                        And in case there was any mystery around what precisely the company is going to unveil, Samsung has happily spoiled the surprise with the inclusion of a prominent S Pen on the invite. The August event will almost certainly see the debut of the Galaxy Note 10.
+                        And in case there was any mystery around what precisely the company is going to unveil, Samsung has happily spoiled the surprise with the inclusion of a prominent S Pen on the invite. The August event will almost certainly see the debut of the Galaxy Note 10.Nvidia’s high-end RTX line is getting three new additions today in the form of a new variant of gaming-focused graphics cards the chipmaker is calling “Super.” As detailed in numerous rumors and leaks over the last month or so, the RTX 2060, 2070, and 2080 desktop cards will all have Super versions. The cards offer modest speed bumps while maintaining the same price point as the current line of RTX cards, which first hit the market last fall and introduced new visual fidelity and lighting features to PC gaming like real-time ray tracing.
+
+                        
                     </p>
         
-                    <div class="star-rating">
-                        <div class="star-rating__wrap">
-                            <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
-                            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
-                            <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
-                            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
-                            <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
-                            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
-                            <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
-                            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
-                            <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
-                            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
-                        </div>
-                    </div>
-                                
-                    <span>5 comments</span>
+                    <div class="card-icons">
+                            <div class="review_stars_wrap">
+                                    <div class="review_stars">
+                                        <input id="star-14" type="radio" name="stars"/>
+                                        <label title="Awesome" for="star-14">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <input id="star-13" type="radio" name="stars"/>
+                                        <label title="Good" for="star-13">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <input id="star-12" type="radio" name="stars" checked="checked" />
+                                        <label title="Normal" for="star-12">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <input id="star-11" type="radio" name="stars"/>
+                                        <label title="Bad" for="star-11">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                        <input id="star-10" type="radio" name="stars"/>
+                                        <label title="Very bad" for="star-10">
+                                            <i class="fas fa-star"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            
+                                <span class="card-comments">5 </span>
+                            </div>
                 </li>
                 <li class="card-item">
-                        <img class="card-img" src="https://techcrunch.com/wp-content/uploads/2019/07/Galaxy-UNPACKED-2019-Official-Invitation.jpg?w=1390&crop=1"/>
+                        <div class="image"><a href="#"><img class="card-img" src="https://cdn.vox-cdn.com/thumbor/5FRrWJ8MNz-7vqk2yS5QF-reraU=/0x0:1200x675/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/64657494/Galaxy_UNPACKED_2019_Official_Invitation.0.jpg"/></a></div>
 
                         <h3 class="card-title">Samsung will announce the next Galaxy Note on August 7</h3>
 
@@ -134,51 +180,75 @@
                                 And in case there was any mystery around what precisely the company is going to unveil, Samsung has happily spoiled the surprise with the inclusion of a prominent S Pen on the invite. The August event will almost certainly see the debut of the Galaxy Note 10.
                         </p>
 
-                        <div class="star-rating">
-                                <div class="star-rating__wrap">
-                                  <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
-                                  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
-                                  <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
-                                  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
-                                  <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
-                                  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
-                                  <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
-                                  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
-                                  <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
-                                  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+                        <div class="card-icons">
+                                <div class="review_stars_wrap">
+                                        <div class="review_stars">
+                                            <input id="star-19" type="radio" name="stars"/>
+                                            <label title="Awesome" for="star-19">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-18" type="radio" name="stars"/>
+                                            <label title="Good" for="star-18">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-17" type="radio" name="stars" checked="checked" />
+                                            <label title="Normal" for="star-17">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-16" type="radio" name="stars"/>
+                                            <label title="Bad" for="star-16">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-15" type="radio" name="stars"/>
+                                            <label title="Very bad" for="star-15">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                
+                                    <span class="card-comments">5 </span>
                                 </div>
-                        </div>
-                        
-                        <span>5 comments</span>
                     </li>
                     <li class="card-item">
-                            <img class="card-img" src="https://techcrunch.com/wp-content/uploads/2019/07/Galaxy-UNPACKED-2019-Official-Invitation.jpg?w=1390&crop=1"/>
+                            <div class="image"><a href="#"><img class="card-img" src="https://cdn.vox-cdn.com/thumbor/2mFZeSBfi9v_lrcK6knRDfyYgag=/0x0:1920x1080/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/64655623/s.aolcdn.0.0.jpg"/></a></div>
     
-                            <h3 class="card-title">Samsung will announce the next Galaxy Note on August 7</h3>
+                            <h3 class="card-title">Sony raises PlayStation Vue prices by $5 a month across all tiers
+                                </h3>
     
                             <span class="card-publication">02/07/2019 10:50</span>
     
-                            <p class="card-description">It’s official. Samsung just sent out invites for the next Unpacked event. The big show kicks off at 4PM ET August 7, right here in New York. The timing lines up with rumors that have been floating around for few weeks — not to mention last year’s big event.
-    
-                                    And in case there was any mystery around what precisely the company is going to unveil, Samsung has happily spoiled the surprise with the inclusion of a prominent S Pen on the invite. The August event will almost certainly see the debut of the Galaxy Note 10.
+                            <p class="card-description">Every PlayStation Vue subscriber will see a $5-per-month price increase, Sony announced today. New subscribers to Sony’s over-the-top TV service will see higher costs across all pricing tiers, meaning basic plans will rise from $45 to $50 per month. Current subscribers will start paying the higher price after July 31st. The increase comes from a recent review of what competitors are charging for content, changes in the ecosystem, and the number of services offered, according to Sony’s blog post on the announcement.
+
+                                    PlayStation Vue isn’t the only live TV streaming package that’s getting an increase: YouTube TV, which offers similar paid TV packages with a bundle of channels, raised its monthly fee to $50 a month (or $55 a month for those subscribed through Apple). This is due to YouTube TV adding Discovery’s network lineup (Discovery Channel, HGTV, Food Network, TLC, Investigation Discovery, Animal Planet, Travel Channel, and MotorTrend) to its offerings.
                             </p>
-    
-                            <div class="star-rating">
-                                    <div class="star-rating__wrap">
-                                      <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
-                                      <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
-                                      <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
-                                      <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
-                                      <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
-                                      <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
-                                      <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
-                                      <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
-                                      <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
-                                      <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+                            <div class="card-icons">
+                                <div class="review_stars_wrap">
+                                        <div class="review_stars">
+                                            <input id="star-24" type="radio" name="stars"/>
+                                            <label title="Awesome" for="star-24">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-23" type="radio" name="stars"/>
+                                            <label title="Good" for="star-23">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-22" type="radio" name="stars" checked="checked" />
+                                            <label title="Normal" for="star-22">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-21" type="radio" name="stars"/>
+                                            <label title="Bad" for="star-21">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                            <input id="star-20" type="radio" name="stars"/>
+                                            <label title="Very bad" for="star-20">
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                        </div>
                                     </div>
-                            </div>
-                            
-                            <span>5 comments</span>
+                                
+                                    <span class="card-comments">5 </span>
+                                </div>
                         </li>
                 </ul>
             </section>
@@ -238,7 +308,7 @@
                 </ul>
             </div>
         </aside>
-
+        </div>
         <footer>
             <h2 class="footer-logo">Technoblog</h2>
             <ul class="footer-contacts">
