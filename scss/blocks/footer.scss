@@ -14,7 +14,7 @@
     min-height: 100px;
     text-transform: uppercase;
     a {
-        
+        font-family: 'Dosis', sans-serif;
         text-decoration: none;
         color: #3c3351;
     }
@@ -52,4 +52,42 @@
     top: 3px;
     right: 5px;
     content: url(../img/iconmonstr-home-4.svg);
+}
+
+.copyright::before {
+    position: relative;
+    top: 3px;
+    right: 5px;
+    content: url(../img/iconmonstr-copyright-1.svg)
+}
+
+@media all and (min-width: 768px) and (max-width: 1025px) {
+    .footer-wrapper {
+        width: 750px;
+        margin: 0 auto;
+    }
+    .footer-logo {
+        margin-top: 40px;
+        min-height: 100px;
+        text-transform: uppercase;
+    }
+}
+
+@media all and (max-width: 1025px) {
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin: 0 auto;
+    }
+    .footer-logo {
+        text-align: center;
+        margin-top: 40px;
+        min-height: 100px;
+        text-transform: uppercase;
+    }
+    .footer-contacts {
+        margin-left: 80px;
+    }
+    
 }

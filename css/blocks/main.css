@@ -127,3 +127,8 @@
   .card-wrapper {
     margin-top: 160px;
     width: 750px; } }
+
+@media all and (max-width: 767px) {
+  .card-wrapper {
+    margin-top: 180px;
+    width: 320px; } }

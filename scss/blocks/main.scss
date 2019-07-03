@@ -155,3 +155,11 @@
     width: 750px;
   }
 }
+
+@media all and (max-width: 767px) {
+  .card-wrapper {
+    // border: 1px solid #000;
+    margin-top: 180px;
+    width: 320px;
+  }
+}

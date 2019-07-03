@@ -116,4 +116,57 @@ aside {
 @media all and (min-width: 768px) and (max-width: 1025px) {
   aside {
     margin-top: 20px;
-    width: 750px; } }
+    width: 750px; }
+  .subscriber-name, .subscriber-email {
+    width: 720px;
+    margin: 10px auto;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px; }
+  .subscribe-btn {
+    margin-top: 20px;
+    width: 720px;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 0; }
+  .search-input {
+    margin-top: 20px;
+    width: 700px; }
+  .tags {
+    margin: 20px auto; }
+  .comments-list {
+    width: 750px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+    grid-area: col-end; } }
+
+@media all and (max-width: 767px) {
+  aside {
+    margin-top: 20px;
+    width: 320px; }
+  .subscriber-name, .subscriber-email {
+    width: 300px;
+    margin: 10px auto;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px; }
+  .subscribe-btn {
+    margin-top: 20px;
+    width: 300px;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 0; }
+  .search-input {
+    margin-top: 20px;
+    width: 300px; }
+  .tags {
+    margin: 20px auto; }
+  .comments-list {
+    width: 320px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+    grid-area: col-end; } }
