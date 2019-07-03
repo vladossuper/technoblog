@@ -53,6 +53,9 @@
   width: 1200px;
   margin: 0 auto; }
 
+.menu-input {
+  display: none; }
+
 .nav-list {
   margin-top: 30px;
   list-style: none;
