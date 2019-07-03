@@ -42,9 +42,10 @@ aside {
   padding: 10px 0; }
 
 .search-input {
+  width: 280px;
   border: 1px solid #ccc;
   border-radius: 50px;
-  height: 20px; }
+  height: 30px; }
 
 .submit-input {
   padding-bottom: 3px;
@@ -58,3 +59,56 @@ aside {
 
 .search-author {
   margin-top: 15px; }
+
+.tags {
+  margin-top: 20px;
+  width: 300px;
+  text-align: center; }
+
+.tags span {
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase; }
+
+.comments-title {
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 24px; }
+
+.comments-list {
+  list-style: none;
+  width: 300px; }
+
+.comment {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 15px;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between; }
+
+.comment-img {
+  margin-top: 15px;
+  margin-left: 5px;
+  height: 50px;
+  width: 50px; }
+
+.right-comment-content {
+  margin-top: 10px;
+  width: 230px; }
+
+.comment-name {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #654d33; }
+
+.comment-text {
+  margin-top: 15px;
+  width: 230px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
