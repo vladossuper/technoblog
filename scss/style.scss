@@ -12,7 +12,46 @@
     justify-content: space-between;
     margin: 0 auto;
 }
-    
+@media all and (min-width: 768px) and (max-width: 1025px) {
+    .fake-wrapper {
+        width: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    // .fake-wrapper aside .author-info {
+    //     order: 1;
+    // }
+
+    // .fake-wrapper main .card-wrapper .card-list {
+    //     order: 2;
+    // }
+
+    // .fake-wrapper aside .social-network {
+    //     order: 3;
+    // }
+
+    // .fake-wrapper aside .subscribe-author {
+    //     order: 4;
+    // }
+    // .fake-wrapper aside .search-author {
+    //     order: 5;
+    // }
+    // .fake-wrapper aside .tags {
+    //     order: 6;
+    // }
+    // .fake-wrapper aside .last-comments {
+    //     order: 7;
+    // }
+    .fake-wrapper aside .author-info {
+        position: absolute;
+        top: 90px;
+    }
+
+}
+
+
 @import "blocks/header.scss";
 @import "blocks/main.scss";
 @import "blocks/aside.scss";

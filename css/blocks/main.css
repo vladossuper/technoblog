@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 30px;
+  grid-area: col-end;
   list-style: none; }
 
 .card-item {
@@ -121,3 +122,8 @@
   margin-left: 30px;
   margin-top: 25px;
   display: flex; }
+
+@media all and (min-width: 768px) and (max-width: 1025px) {
+  .card-wrapper {
+    margin-top: 160px;
+    width: 750px; } }

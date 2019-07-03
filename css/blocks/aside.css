@@ -112,3 +112,8 @@ aside {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+@media all and (min-width: 768px) and (max-width: 1025px) {
+  aside {
+    margin-top: 20px;
+    width: 750px; } }

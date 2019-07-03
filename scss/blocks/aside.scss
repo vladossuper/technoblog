@@ -118,3 +118,11 @@ aside {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+@media all and (min-width: 768px) and (max-width: 1025px) {
+    aside {
+        margin-top: 20px;
+        // border: 1px solid#000;
+        width: 750px;
+    }
+}
