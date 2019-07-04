@@ -321,7 +321,8 @@ svg {
       height: 40px; } }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
 
 .card-wrapper {
   width: 870px; }
@@ -556,7 +557,7 @@ svg {
   width: 320px; }
 
 .subscriber-name, .subscriber-email {
-  width: 320px;
+  width: 315px;
   margin-top: 25px;
   height: 25px;
   border: 1px solid #ccc;
@@ -567,7 +568,7 @@ svg {
   text-transform: uppercase;
   border: none;
   background: #47333f;
-  width: 320px;
+  width: 315px;
   color: #fff;
   border-radius: 50px;
   text-align: center;

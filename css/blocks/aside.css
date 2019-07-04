@@ -84,7 +84,7 @@ svg {
   width: 320px; }
 
 .subscriber-name, .subscriber-email {
-  width: 320px;
+  width: 315px;
   margin-top: 25px;
   height: 25px;
   border: 1px solid #ccc;
@@ -95,7 +95,7 @@ svg {
   text-transform: uppercase;
   border: none;
   background: #47333f;
-  width: 320px;
+  width: 315px;
   color: #fff;
   border-radius: 50px;
   text-align: center;
