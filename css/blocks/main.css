@@ -13,9 +13,9 @@
   list-style: none; }
 
 .card-item {
-  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  -moz-box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
   border: 1px solid #ccc;
   border-radius: 10px;
   width: 250px; }
@@ -46,18 +46,28 @@
   color: #000;
   text-align: center;
   margin-top: 15px; }
+  .card-title a {
+    text-decoration: none;
+    color: #000; }
+  .card-title :hover {
+    cursor: pointer;
+    color: #598753; }
 
 .card-publication {
-  font-size: 12px; }
+  font-size: 12px;
+  position: relative;
+  top: 10px;
+  left: 20px; }
 
 .card-description {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 18px;
   padding-top: 20px;
   overflow: hidden;
   height: 200px;
   width: 220px;
-  margin-left: 15px; }
+  margin-left: 15px;
+  margin-bottom: 10px; }
   .card-description ::before {
     content: "";
     float: left;
@@ -111,12 +121,15 @@
   color: #ec9801; }
 
 .card-comments::before {
-  margin-bottom: 5px;
+  position: relative;
+  top: 5px;
+  right: 5px;
   content: url(../img/iconmonstr-speech-bubble-comment-thin.svg);
   color: black; }
 
 .card-comments {
-  margin-left: 20px; }
+  margin-left: 50px;
+  margin-bottom: 10px; }
 
 .card-icons {
   margin-left: 30px;
@@ -125,10 +138,12 @@
 
 @media all and (min-width: 768px) and (max-width: 1025px) {
   .card-wrapper {
+    margin-left: 50px;
     margin-top: 160px;
     width: 750px; } }
 
 @media all and (max-width: 767px) {
   .card-wrapper {
-    margin-top: 180px;
+    margin-left: 20px;
+    margin-top: 300px;
     width: 320px; } }

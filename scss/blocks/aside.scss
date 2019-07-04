@@ -8,6 +8,9 @@ aside {
     font-weight: bold;
 }
 .author-img {
+    width: 100px;
+    height: 130px;
+    border-radius: 100px;
     margin-top: 10px;
 }
 .author-name {
@@ -16,10 +19,66 @@ aside {
     color: #770000;
 }
 .author-description {
+    font-family: 'Roboto', sans-serif;
     color: #0a272b;
     font-size: 16px;
     line-height: 21px;
     margin-top: 20px;
+}
+
+.social-network-title {
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 21px;
+    color: #0a272b;
+}
+
+.aside-network {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    width: 300px;
+    margin-left: 20px;
+    justify-content: space-between;
+    // a {
+    //     text-decoration: none;
+    // }
+    .facebook:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        fill:#443e9d;
+    }
+    .instagram:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        // stroke: red;
+        fill: #e66465;
+    }
+    .twitter:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        fill:#0c0266;
+    }
+    
+}
+svg {
+    stroke:inherit;
+    stroke-width:inherit;
+    fill:inherit;
+}
+.subscribe-title {
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 21px;
+    color: #0a272b;
 }
 
 .subscribe-author {
@@ -44,6 +103,18 @@ aside {
     text-align: center;
     padding: 10px 0;
 }
+.subscribe-btn:hover{
+    cursor: pointer;
+    background: linear-gradient(#e66465, #9198e5);
+    color: #fff;
+}
+.search-title {
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 21px;
+    color: #0a272b;
+}
 .search-input {
     width: 280px;
     border: 1px solid #ccc;
@@ -61,15 +132,39 @@ aside {
     background-image: url(../img/iconmonstr-magnifier-4.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
+.submit-input:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    fill:#443e9d;
+}
+
 .search-author {
     margin-top: 15px;
+}
+.tags-title {
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 21px;
+    color: #0a272b;
 }
 .tags {
     margin-top: 20px;
     width: 300px;
     text-align: center;
 }
+.tags-item {
+    margin-top: -5px; 
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #91b5b5;
+}
+
 .tags span {
     font-size: 16px;
     line-height: 21px;
@@ -100,10 +195,15 @@ aside {
     height: 50px;
     width: 50px;
 }
+
+
+
 .right-comment-content {
     margin-top: 10px;
     width: 230px;
 }
+
+
 .comment-name {
     text-transform: uppercase;
     font-size: 16px;
@@ -125,6 +225,36 @@ aside {
         // border: 1px solid#000;
         width: 750px;
     }
+    .author-info {
+        margin-left: 70px;
+    }
+    .author-title {
+        display: none;
+    }
+    .author-name {
+        font-size: 25px;
+        position: relative;
+        bottom: 150px;
+        left: 180px;
+    }
+    .author-description {
+        width: 500px;
+        font-size: 16px;
+        position: relative;
+        bottom: 130px;
+        left: 130px;
+    }
+    
+
+    .aside-network {
+        margin-top: 20px;
+        list-style: none;
+        display: flex;
+        width: 300px;
+        margin-left: 110px;
+        justify-content: space-between;
+    }
+
     .subscriber-name, .subscriber-email {
         width: 720px;
         margin: 10px auto;
@@ -162,6 +292,9 @@ aside {
         margin-top: 20px;
         // border: 1px solid#000;
         width: 320px;
+    }
+    .author-title {
+        display: none;
     }
     .subscriber-name, .subscriber-email {
         width: 300px;

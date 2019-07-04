@@ -43,9 +43,9 @@
     font-family: 'Dosis', sans-serif;
     text-decoration: none;
     color: #3c3351; }
-  .header-logo img {
-    width: 80px;
-    height: 80px; }
+  .header-logo :hover {
+    cursor: pointer;
+    color: #39643a; }
 
 .header-wrapper {
   display: flex;
@@ -67,7 +67,16 @@
   font-family: 'Muli', sans-serif;
   color: #6f6563;
   text-transform: uppercase;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: bold; }
+
+.nav-item:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  color: #39643a;
+  text-decoration: underline; }
 
 .header-nav a {
   text-decoration: none; }
@@ -82,8 +91,34 @@
   display: flex;
   width: 250px;
   justify-content: space-between; }
-  .social-network a {
-    text-decoration: none; }
+  .social-network .facebook:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    fill: #443e9d; }
+  .social-network .instagram:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    fill: #e66465; }
+  .social-network .twitter:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    fill: #0c0266; }
+  .social-network .search-item:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    fill: #0c0266; }
+
+svg {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit; }
 
 .search-item {
   margin-right: 45px; }
@@ -156,9 +191,11 @@
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-  .nav-list li {
-    padding: 10px 0;
-    font-size: 22px; }
+    .nav-list li {
+      padding: 10px 0;
+      font-size: 22px; }
+    .nav-list .nav-item:hover {
+      text-decoration: underline; }
   /*
  * And let's slide it in from the left
  */
@@ -180,9 +217,12 @@
     .header-logo a {
       text-decoration: none;
       color: #3c3351; }
-    .header-logo img {
+    .header-logo svg {
       width: 40px;
-      height: 40px; } }
+      height: 40px; }
+    .header-logo :hover {
+      cursor: pointer;
+      color: #39643a; } }
 
 @media all and (max-width: 767px) {
   .header-wrapper {
@@ -276,7 +316,7 @@
     .header-logo a {
       text-decoration: none;
       color: #3c3351; }
-    .header-logo img {
+    .header-logo svg {
       width: 40px;
       height: 40px; } }
 
@@ -295,9 +335,9 @@
   list-style: none; }
 
 .card-item {
-  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  -moz-box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
   border: 1px solid #ccc;
   border-radius: 10px;
   width: 250px; }
@@ -328,18 +368,28 @@
   color: #000;
   text-align: center;
   margin-top: 15px; }
+  .card-title a {
+    text-decoration: none;
+    color: #000; }
+  .card-title :hover {
+    cursor: pointer;
+    color: #598753; }
 
 .card-publication {
-  font-size: 12px; }
+  font-size: 12px;
+  position: relative;
+  top: 10px;
+  left: 20px; }
 
 .card-description {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 18px;
   padding-top: 20px;
   overflow: hidden;
   height: 200px;
   width: 220px;
-  margin-left: 15px; }
+  margin-left: 15px;
+  margin-bottom: 10px; }
   .card-description ::before {
     content: "";
     float: left;
@@ -393,12 +443,15 @@
   color: #ec9801; }
 
 .card-comments::before {
-  margin-bottom: 5px;
+  position: relative;
+  top: 5px;
+  right: 5px;
   content: url(../img/iconmonstr-speech-bubble-comment-thin.svg);
   color: black; }
 
 .card-comments {
-  margin-left: 20px; }
+  margin-left: 50px;
+  margin-bottom: 10px; }
 
 .card-icons {
   margin-left: 30px;
@@ -407,12 +460,14 @@
 
 @media all and (min-width: 768px) and (max-width: 1025px) {
   .card-wrapper {
+    margin-left: 50px;
     margin-top: 160px;
     width: 750px; } }
 
 @media all and (max-width: 767px) {
   .card-wrapper {
-    margin-top: 180px;
+    margin-left: 20px;
+    margin-top: 360px;
     width: 320px; } }
 
 aside {
@@ -424,6 +479,9 @@ aside {
   font-weight: bold; }
 
 .author-img {
+  width: 100px;
+  height: 130px;
+  border-radius: 100px;
   margin-top: 10px; }
 
 .author-name {
@@ -432,10 +490,56 @@ aside {
   color: #770000; }
 
 .author-description {
+  font-family: 'Roboto', sans-serif;
   color: #0a272b;
   font-size: 16px;
   line-height: 21px;
   margin-top: 20px; }
+
+.social-network-title {
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 21px;
+  color: #0a272b; }
+
+.aside-network {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  width: 300px;
+  margin-left: 20px;
+  justify-content: space-between; }
+  .aside-network .facebook:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    fill: #443e9d; }
+  .aside-network .instagram:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    fill: #e66465; }
+  .aside-network .twitter:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    fill: #0c0266; }
+
+svg {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit; }
+
+.subscribe-title {
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 21px;
+  color: #0a272b; }
 
 .subscribe-author {
   width: 300px; }
@@ -458,6 +562,18 @@ aside {
   text-align: center;
   padding: 10px 0; }
 
+.subscribe-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(#e66465, #9198e5);
+  color: #fff; }
+
+.search-title {
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 21px;
+  color: #0a272b; }
+
 .search-input {
   width: 280px;
   border: 1px solid #ccc;
@@ -474,13 +590,34 @@ aside {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.submit-input:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  fill: #443e9d; }
+
 .search-author {
   margin-top: 15px; }
+
+.tags-title {
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 21px;
+  color: #0a272b; }
 
 .tags {
   margin-top: 20px;
   width: 300px;
   text-align: center; }
+
+.tags-item {
+  margin-top: -5px;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #91b5b5; }
 
 .tags span {
   font-size: 16px;
@@ -534,6 +671,28 @@ aside {
   aside {
     margin-top: 20px;
     width: 750px; }
+  .author-info {
+    margin-left: 70px; }
+  .author-title {
+    display: none; }
+  .author-name {
+    font-size: 25px;
+    position: relative;
+    bottom: 150px;
+    left: 180px; }
+  .author-description {
+    width: 500px;
+    font-size: 16px;
+    position: relative;
+    bottom: 130px;
+    left: 130px; }
+  .aside-network {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    width: 300px;
+    margin-left: 110px;
+    justify-content: space-between; }
   .subscriber-name, .subscriber-email {
     width: 720px;
     margin: 10px auto;
@@ -563,6 +722,8 @@ aside {
   aside {
     margin-top: 20px;
     width: 320px; }
+  .author-title {
+    display: none; }
   .subscriber-name, .subscriber-email {
     width: 300px;
     margin: 10px auto;
@@ -653,7 +814,7 @@ aside {
     min-height: 100px;
     text-transform: uppercase; } }
 
-@media all and (max-width: 1025px) {
+@media all and (max-width: 767px) {
   .footer-wrapper {
     display: flex;
     flex-direction: column;

@@ -10,9 +10,9 @@
     font-family: 'Dosis', sans-serif;
     text-decoration: none;
     color: #3c3351; }
-  .header-logo img {
-    width: 80px;
-    height: 80px; }
+  .header-logo :hover {
+    cursor: pointer;
+    color: #39643a; }
 
 .header-wrapper {
   display: flex;
@@ -34,7 +34,16 @@
   font-family: 'Muli', sans-serif;
   color: #6f6563;
   text-transform: uppercase;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: bold; }
+
+.nav-item:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  color: #39643a;
+  text-decoration: underline; }
 
 .header-nav a {
   text-decoration: none; }
@@ -49,8 +58,34 @@
   display: flex;
   width: 250px;
   justify-content: space-between; }
-  .social-network a {
-    text-decoration: none; }
+  .social-network .facebook:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    fill: #443e9d; }
+  .social-network .instagram:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    fill: #e66465; }
+  .social-network .twitter:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    fill: #0c0266; }
+  .social-network .search-item:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    fill: #0c0266; }
+
+svg {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit; }
 
 .search-item {
   margin-right: 45px; }
@@ -123,9 +158,11 @@
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-  .nav-list li {
-    padding: 10px 0;
-    font-size: 22px; }
+    .nav-list li {
+      padding: 10px 0;
+      font-size: 22px; }
+    .nav-list .nav-item:hover {
+      text-decoration: underline; }
   /*
  * And let's slide it in from the left
  */
@@ -147,9 +184,12 @@
     .header-logo a {
       text-decoration: none;
       color: #3c3351; }
-    .header-logo img {
+    .header-logo svg {
       width: 40px;
-      height: 40px; } }
+      height: 40px; }
+    .header-logo :hover {
+      cursor: pointer;
+      color: #39643a; } }
 
 @media all and (max-width: 767px) {
   .header-wrapper {
@@ -243,6 +283,6 @@
     .header-logo a {
       text-decoration: none;
       color: #3c3351; }
-    .header-logo img {
+    .header-logo svg {
       width: 40px;
       height: 40px; } }

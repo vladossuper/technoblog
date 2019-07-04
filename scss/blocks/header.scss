@@ -11,9 +11,9 @@
         text-decoration: none;
         color: #3c3351;
     }
-    img {
-        width: 80px; 
-        height: 80px;
+    :hover {
+        cursor: pointer;
+        color:#39643a;
     }
 }
 .header-wrapper {
@@ -43,6 +43,16 @@
     color: #6f6563;
     text-transform: uppercase;
     font-size: 16px;
+    font-weight: bold;
+}
+.nav-item:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    color:#39643a;
+    text-decoration: underline;
+    
 }
 
 .header-nav a {
@@ -60,11 +70,45 @@
     display: flex;
     width: 250px;
     justify-content: space-between;
-    a {
-        text-decoration: none;
+    // a {
+    //     text-decoration: none;
+    // }
+    .facebook:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        fill:#443e9d;
+    }
+    .instagram:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        // stroke: red;
+        fill: #e66465;
+    }
+    .twitter:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        fill:#0c0266;
+    }
+    .search-item:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        fill:#0c0266;
     }
     
-} 
+}
+svg {
+    stroke:inherit;
+    stroke-width:inherit;
+    fill:inherit;
+}
+
 // .social-network a {
 //     text-decoration: none;
 // }
@@ -173,12 +217,15 @@
         transform: translate(-100%, 0);
         
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        li {
+            padding: 10px 0;
+            font-size: 22px;
+        }
+        .nav-item:hover {
+            text-decoration: underline;
+        }
     }
 
-    .nav-list li {
-        padding: 10px 0;
-        font-size: 22px;
-    }
 
 /*
  * And let's slide it in from the left
@@ -207,9 +254,13 @@
             text-decoration: none;
             color: #3c3351;
         }
-        img {
-            width: 40px; 
+        svg {
+            width: 40px;
             height: 40px;
+        }
+        :hover {
+            cursor: pointer;
+            color: #39643a;
         }
     }
 } 
@@ -348,7 +399,7 @@
             text-decoration: none;
             color: #3c3351;
         }
-        img {
+        svg {
             width: 40px; 
             height: 40px;
         }
