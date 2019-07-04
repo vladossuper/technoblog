@@ -17,9 +17,9 @@
     font-family: 'Dosis', sans-serif;
     text-decoration: none;
     color: #3c3351; }
-  .footer-logo img {
-    width: 45px;
-    height: 45px; }
+  .footer-logo :hover {
+    cursor: pointer;
+    color: #39643a; }
 
 .footer-contacts {
   list-style: none; }

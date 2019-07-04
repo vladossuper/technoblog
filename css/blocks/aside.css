@@ -1,18 +1,29 @@
 aside {
   margin-top: 20px;
-  width: 300px; }
+  width: 320px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #efefef;
+  box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2); }
 
 .author-title {
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 21px;
+  color: #0a272b; }
 
 .author-img {
+  margin-left: 100px;
   width: 100px;
   height: 130px;
   border-radius: 100px;
   margin-top: 10px; }
 
 .author-name {
+  margin-left: 100px;
   margin-top: 15px;
   text-transform: uppercase;
   color: #770000; }
@@ -70,10 +81,10 @@ svg {
   color: #0a272b; }
 
 .subscribe-author {
-  width: 300px; }
+  width: 320px; }
 
 .subscriber-name, .subscriber-email {
-  width: 300px;
+  width: 320px;
   margin-top: 25px;
   height: 25px;
   border: 1px solid #ccc;
@@ -84,7 +95,7 @@ svg {
   text-transform: uppercase;
   border: none;
   background: #47333f;
-  width: 300px;
+  width: 320px;
   color: #fff;
   border-radius: 50px;
   text-align: center;
@@ -103,7 +114,7 @@ svg {
   color: #0a272b; }
 
 .search-input {
-  width: 280px;
+  width: 290px;
   border: 1px solid #ccc;
   border-radius: 50px;
   height: 30px; }
@@ -137,7 +148,7 @@ svg {
 
 .tags {
   margin-top: 20px;
-  width: 300px;
+  width: 320px;
   text-align: center; }
 
 .tags-item {
@@ -161,7 +172,7 @@ svg {
 
 .comments-list {
   list-style: none;
-  width: 300px; }
+  width: 320px; }
 
 .comment {
   border: 1px solid #ccc;
