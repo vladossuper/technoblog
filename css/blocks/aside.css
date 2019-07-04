@@ -210,6 +210,9 @@ svg {
   aside {
     margin-top: 20px;
     width: 750px; }
+  .author-img {
+    position: relative;
+    right: 100px; }
   .author-info {
     margin-left: 70px; }
   .author-title {

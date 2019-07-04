@@ -179,7 +179,7 @@ svg {
   .nav-list {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     width: 300px;
     margin: -110px 0px 0 -150px;
     padding: 100vh 170px;
@@ -280,7 +280,7 @@ svg {
   .nav-list {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     width: 200px;
     margin: -110px 0px 0 -150px;
     padding: 100vh 170px;
@@ -683,6 +683,9 @@ svg {
   aside {
     margin-top: 20px;
     width: 750px; }
+  .author-img {
+    position: relative;
+    right: 100px; }
   .author-info {
     margin-left: 70px; }
   .author-title {

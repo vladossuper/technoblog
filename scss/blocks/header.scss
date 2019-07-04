@@ -202,7 +202,7 @@ svg {
         // height: 100vh;
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         width: 300px;
         margin: -110px 0px 0 -150px;
         padding: 100vh 170px;
@@ -350,7 +350,7 @@ svg {
         // height: 100vh;
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         width: 200px;
         margin: -110px 0px 0 -150px;
         padding: 100vh 170px;
